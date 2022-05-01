@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documentation for HCI homework" />
+    <link rel="stylesheet" href="raport.css" type="text/css">
+    <title>Scholarly Raport</title>
+</head>
+
+<body prefix="schema: http://schema.org/ xsd: http://www.w3.org/2001/XMLSchema# sa: https://ns.science.ai/">
+    <article typeof="schema:ScholarlyArticle">
+        <h1>Green City</h1>
+        <section typeof="sa:AuthorsList">
+            <div role="contentinfo">
+                <h2>Authors</h2>
+                <p>
+                    The following document was written to specify the UI of my Bachelor of Science application.
+                </p>
+                <ul>
+                    <li typeof="sa:ContributorRole" poperty="schema:author">
+                        <span typeof="schema:Person">
+                        <meta property="schema:givenName" content="Cosmina" />
+                        <meta property="schema:familyName" content="Iordan" />
+                        <span property="schema:name">Cosmina Iordan</span>
+                        </span>
+                        <ul>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailto:cosmina.iordan03@gmail.com" property="schema:email">cosmina.iordan03@gmail.com</a>
+                            </li>
+                            <li property="schema:roleContactPoint" typeof="schema:ContactPoint">
+                                <a href="mailto:cosmina.iordan@info.uaic.ro" property="schema:email">cosmina.iordan@info.uaic.ro</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section>
+            <h2>Content</h2>
+            <ol>
+                <li><a href="#1">Introduction</a></li>
+                <li><a href="#2">Overall Description</a></li>
+                <li><a href="#3">Ideas/concepts regarding the project design</a></li>
+                <li><a href="#4">Examples concerning the QOC (Questions, Options, Criteria) method</a></li>
+                <li><a href="#5"> HTML5 persona documents</a></li>
+                
+            </ol>
+        </section>
+        <section typeof="sa:ReferenceList">
+            <h2 id="1">1. Introduction</h2>
+            <h3>1.1 Purpose</h3>
+            <p>
+                The main purpose of the project is to develop an application where people can contribute to making the city greener and the air quality better by indicating which areas need help.
+            </p>
+            <h3>1.2 Document Conventions</h3>
+            <p>
+                The documentation is made under the Scholarly convention and IEEE-Template.
+            </p>
+            <h3>1.3 Intended Audience and Reading Suggestions</h3>
+            <p>The intended audience is represented by any person that is tired of the all the concrete in the city and wants to see some green oasis all around the city.
+            </p>
+            <p>This document contains an overview of the UI of the application in order to provide information about the concepts used when developing it.
+            </p>
+            <h3>1.4 Product Scope</h3>
+            <p>The scope of the product is to provide an application where people can signal the areas which need some greenery.</p>
+            <div role="doc-introduction">
+                <h3 typeof="sa:ReferenceList">1.5 References</h3>
+                <ul>
+                    <li class="reference--element" typeof="schema:ScholarlyArticle" resource="https://profs.info.uaic.ro/~busaco/teach/courses/web/web-projects.html">
+                        <span property="schema:author" typeof="schema:Person">
+                          <span property="schema:familyName">Buraga</span>
+                        <span property="schema:givenName">Sabin</span>.
+                        </span>
+                        <cite property="schema:name"><a
+                            href="https://profs.info.uaic.ro/~busaco/teach/courses/hci/"
+                            >HCI website</a
+                          ></cite
+                        >
+                        <span
+                          property="schema:isPartOf"
+                          typeof="schema:PublicationVolume"
+                        >
+                          <span property="schema:isPartOf" typeof="schema:Periodical">
+                            <span property="schema:name">FII UAIC.</span>
+                          </span>
+                        </span>
+                      </li>
+                    </ul>
+                  </div>
+        </section>
+        <section>
+            <h2 id="2">2. Overall Description</h2>
+            <h3>2.1 Prototype Links</h3>
+            <p>
+                <a href="https://www.figma.com/proto/uJ1AZtDc1j2Th0bpNMMRag/Untitled?page-id=0%3A1&node-id=8%3A12&viewport=241%2C48%2C0.47&scaling=scale-down&starting-point-node-id=8%3A12&show-proto-sidebar=1">The prototype link can be found here</a>
+                <p> For the desktop prototype click on Flow 1. The button is on the left.</p>
+                <p> For the mobile prototype(only the home page) click on Flow 2. The button is on the left.</p>
+            </p>
+            <h3>2.2 Product Perspective</h3>
+
+            <p>Green City is a modular web application which brings together autorities,non-profit organizations and 
+                normal citizens to get a better life quality in the cities.
+            </p>
+            <h3>2.3 Product Functions</h3>
+
+            <p>This application provides for the user the posibility to create an account so he/she can point the 
+                areas where they want to see trees and other bushes.
+                The user can check wheather the area he/she pointed to has been solved or not.
+            </p>
+            <h3>2.4 User Classes and Characteristics</h3>
+            <h4>Regular users</h4>
+            <p>
+               Can create an account,add a new zone,check the zone's progress,join a tree planting event.
+            </p>
+            <h4>Authorities</h4>
+            <p>
+                Can check new zones,updates the progress.
+            </p>
+            <h4>Non-profit Organizations</h4>
+            <p>
+                Can create an event for tree planting for a zone that the authorities approve(not all of them can be safe).
+            </p>
+          
+            <h3>2.5 Operating Environment</h3>
+            <p>
+                This Web aplication is compatible with any browser, it's interface provides support for big
+                screens such as PC and mobile screens based on
+                their dimensions, providing the users with a nice experience on their PC and on their mobile
+                phone.
+            </p>
+            <h3>2.6 Design and Implementation Contraints</h3>
+            <p>The prototype of the app is made using Figma,a free app for wireframing and making website prototypes.
+                I choose Figma because it gives you the css code and so it makes it easy to convert from the prototype to the front-end of the app itself.
+            </p> 
+            <h3>2.7 User Documentation</h3>
+            <p>There is no documentation nedded for a regular user,the app is intuitive.
+                If a user wants to learn a skill and it is not logged in the page will automaticaly redirect it to the "Log in" menu.
+            </p>
+            <h3>2.8 Assumptions and Dependencies</h3>
+            <p>
+            An internet connection is required in order for the product to be
+            usable. 
+            </p>    
+            <p> Green City is an aplication that is compatible with any browser, so you don't need anything else than
+            your favourite web browser.</p>
+        </section>
+        <section>
+            <h2 id="3">3. Ideas/concepts regarding the project design</h2>
+            <h3>3.1 Icons</h3>
+            <p>
+                Using relevant icons is a big part of designing an application,for this reason i choose simple icons that leave no room for interpretation.
+                <ul>
+                    <li>For the name of the application i used an icon with trees which gives the user a sneak peek about what type of app this is.</li>
+                    <li>For the phone version of the app,the responsive part, i used a hamburger menu icon to hide the menu buttons. 
+                        This is a common practice that makes the design easy and user friendly.
+                    </li>
+                    <li>
+                        On the home page we have an interactive map which has a map marker icon to indicate that someone put a "mark" on a certain area. 
+                        The icon is pretty well-known,we can see it all the time in different GPS apps.
+                    </li>
+                </ul>
+              </p>  
+              <p>Also it is important that all the icons have the same style,for a more put together look, for this app all the icons i used are outlined.</p>
+            
+            <h3>3.2 Buttons</h3>
+            <p>
+                Important aspects that i used in the prototype buttons are:
+                <ul>
+                    <li>
+                        Making buttons look like buttons. Buttons need to look buttony—with a bit of shading on their surface or around their edges to make them stand out from the background and look clickable.A shape around a word without any shading isn't enough to make it clearly look buttony, and a simple word on its own definitely doesn't provide enough visual clues.
+                    </li>
+                    <li>
+                        Make the most important button look like it's the most important one. Another common way of making it difficult for users to play hunt-for-the-button-I-want is to offer them lots of buttons in a neat row, all of them looking very similar.
+                        For example on the "Add a new area" page we have a form with more buttons,one for uploading pictures and the main button which adds the area to the database.
+                        The design is very intuitive and makes it very easy for the user to know which button is the most important because the "Add" button is significantly bigger than the other one.
+                    </li>
+                    <li>
+                        Label buttons with what they do. It is important that buttons have suggestive labels. For example if a button leads to a sign-up or a log-in page we can't name it "Log-out".
+                    </li>
+                </ul>
+            </p>
+            <h3>3.3 Layout</h3>
+            <p>
+                A page is normally read from left to right by the user. As a result, on the left side of the page that displays all of the solved locations, there is more information.
+                This strategy has a direct visual influence on the user, since you can see some pictures first and then the information.
+                The content will be concise, containing only the most necessary information, making it easier to read for the user.
+            </p>
+        </section>
+        <section>
+            <h2 id="4">4. Examples concerning the QOC (Questions, Options, Criteria) method</h2>
+            <h3>4.1 Sign up form</h3>
+                <h4>4.1.1 Page description</h4>
+                <p>The page where the user creates an account on the app.</p>
+                <h4>4.1.2 QOC method and thought process</h4>
+                <p>
+                    How can I get the user to sign up for an account? I have the option of creating my own authentication or using a third-party authentication service such as Google or Github.
+                    I chose to do my own authentication for this procedure and not let the user pick between the two options so that I could handle the database and schema easily.
+                </p>
+            <h3>4.2 Adding a new area</h3>
+                <h4>4.2.1 Page description</h4>
+                <p>The page for adding a new area let's the user put all the information needed to pin the point on the map,in other words they will fill in the address.</p> 
+                <h4>4.2.2 QOC method and thought process</h4>
+                <p>
+                    How can I get the user to type in the address? I have a few options: making a list, utilizing Google Maps, and manually typing in the address.
+                    Because of the nature of my program, I decided to employ two options, allowing the user to select whether to manually put in the address or use the current location via Google Maps. I chose these two alternatives because users can add any area that needs to be refreshed, which means it might be anywhere near their home where they know the address or somewhere else where they don't. </p>
+            <h3>4.3 Solved location page</h3>
+                <h4>4.3.1 Page descriptio</h4>
+                <p>The page that displays all the solved areas.</p>
+                <h4>4.2.2 QOC method and thought process</h4>
+                <p>
+                    How can I create a page that displays everything while remaining interesting? I can use different colors for each displayed place, I can use images to bring attention to the location, and I can only show information about the location.
+                    I choose to combine the first and last options for easy user readability and to capture attention. I show the photos first, followed by some quick facts about the site, including the address.
+                 </p>
+        </section>
+        <section>
+        <h2 id="5">5. HTML5 persona documents</h2>
+       <p>
+           <a href="persona.html">You can see the HTML Persona document by clicking this text.</a>
+       </p>
+        </section>
+        
+    </article>
+</body>
+
+</html>

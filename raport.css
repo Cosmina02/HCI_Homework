@@ -1,0 +1,59 @@
+body {
+    font-family: "Montserrat", Sans-Serif;
+    background-color: white;
+    margin: 0;
+}
+
+h1 {
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+}
+
+h2 {
+    border: 2px solid white;
+    border-bottom-color: #026670;
+    padding-bottom: 0.3em;
+    font-size: 2em;
+    margin-left: 2em;
+}
+
+h3 {
+    font-size: 1.5em;
+    margin-left: 4em;
+}
+
+h4 {
+    /* font-size: 1.5em; */
+    margin-left: 8em;
+}
+
+ul {
+    margin-left: 5em;
+}
+
+p {
+    font-size: 1em;
+    margin-left: 6em;
+}
+
+section {
+    width: 90%;
+}
+
+ul ul {
+    margin-left: 0;
+}
+
+ol {
+    margin-left: 6em;
+}
+
+a {
+    color: #be4001;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #cc511c;
+}
